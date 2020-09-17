@@ -1,0 +1,24 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+h1, h2, h3 {
+    font-size: 22px;
+}
+p {
+    font-size: 14px;
+}
+
+.layout__main {
+    max-width: 880px;
+    width: 92%;
+    margin: 30px auto;
+}
+.main_fx {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.main_fx--article {
+    padding: 0 30px;
+    max-width: 400px;
+}
