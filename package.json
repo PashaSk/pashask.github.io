@@ -1,0 +1,9 @@
+{
+  "name": "TorgBox_Frontend",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "build": "sass --embed-source-map --style=compressed  assets/scss/main.scss:assets/compiled/main.css",
+    "start" : "start webpack-dev-server && start sass --watch assets/scss/main.scss:assets/compiled/main.css"
+  }
+}

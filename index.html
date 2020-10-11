@@ -2,32 +2,509 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Pavel Sklyar Personal Website </title>
-  <link rel="stylesheet" href="./css/main.css">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto:ital,wght@0,300;0,400;0,700;0,900;1,300&display=swap" rel="stylesheet">
-  <meta name=viewport content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>Pavel Sklyar | Web Developer Personal Website</title>
+  <link rel="stylesheet" href="assets/compiled/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono|Inconsolata" rel="stylesheet">
+  <link href="https://cdn.materialdesignicons.com/2.0.46/css/materialdesignicons.min.css" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
 </head>
 <body>
-    <header  class="main_hero">
-        <div class="main_fx layout__main">
-            <div class="">
-                <picture>
-                  <source srcset="./assets/hero.webp"  type="image/webp">
-                  <source srcset="./assets/hero.png"  type="image/png">
-                  <img src="./assets/hero.png"  alt="pavel sk">
-                </picture>
-            </div>
-            <div class="main_fx--article">
-                <h1>Pavel Sklyar</h1>
-                <p>experienced ASP.NET Developer<br>
-                building websites and web apps for > 5 years<br>
-                broad expertise in frontend development and optimizations.<br>
-                angular fan</p>
+
+<!--Main menu-->
+  <div class="menu">
+    <div class="container">
+      <div class="row">
+        <div class="menu__wrapper d-none d-lg-block col-md-12">
+          <nav class="">
+            <ul>
+              <li><a href="#resume">Resume</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#testimonials">Testimonials</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="menu__wrapper col-md-12 d-lg-none">
+          <button type="button" class="menu__mobile-button">
+            <span><i class="fa fa-bars" aria-hidden="true"></i></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+<!--Main menu-->
+
+<!-- Mobile menu -->
+  <div class="mobile-menu d-lg-none">
+    <div class="container">
+      <div class="mobile-menu__close">
+        <span><i class="mdi mdi-close" aria-hidden="true"></i></span>
+      </div>
+      <nav class="mobile-menu__wrapper">
+        <ul>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#testimonials">testimonials</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+<!-- Mobile menu -->
+
+<!--Header-->
+  <header class="main-header" style="background-image: url(assets/img/img_hero.jpg)">
+    <div class="container">
+      <div class="row personal-profile">
+        <div class="col-md-4 personal-profile__avatar">
+            <picture>
+                <source srcset="assets/img/img_profile.webp" type="image/webp">
+                <source srcset="assets/img/img_profile.jpg" type="image/jpeg">
+                <img alt="Pavel Sklyar" src="assets/img/img_profile.jpg">
+            </picture>
+        </div>
+        <div class="col-md-8">
+          <p class="personal-profile__name">Pavel Sklyar</p>
+          <p class="personal-profile__work">full stack ASP.NET developer with broad experience in frontend</p>
+          <div class="personal-profile__contacts">
+            <dl class="contact-list contact-list__opacity-titles">
+              <dt>Email:</dt>
+              <dd><a href="mailto:p1653v@yandex.ru">p1653v@yandex.ru</a></dd>
+              <dt>Location:</dt>
+              <dd>Saint Petersburg, Russia</dd>
+              <dt>Telegramm:</dt>
+              <dd><a href="https://t.me/pasha_sk">@pasha_sk</a></dd>
+            </dl>
+          </div>
+          <p class="personal-profile__social">
+            <a href="https://github.com/PashaSk" target="_blank"><i class="fa fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/sklyar-pavel-53a0133b/" target="_blank"><i class="fa fa-linkedin-square"></i></a>
+            <a target="_blank" class="fa icon-upwork" href="https://www.upwork.com/o/profiles/users/~01954d5eb773d11743/?s=1110580755107926016">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="Layer_1" style="enable-background:new 0 0 56.7 56.7;" version="1.1" viewBox="0 0 56.7 56.7" xml:space="preserve"><g><path d="M38.8,24.6c-2.8,0-3.7,2.7-3.9,4.3v0.1l-0.4,1.5c1.2,1,2.7,1.7,4.2,1.7c2,0,3.8-1.7,3.9-3.9C42.6,26.3,40.9,24.6,38.8,24.6   z"/><path d="M28.9,3.7C15.2,3.7,4.1,14.8,4.1,28.5c0,13.7,11.1,24.8,24.8,24.8c13.7,0,24.8-11.1,24.8-24.8C53.7,14.8,42.6,3.7,28.9,3.7   z M38.8,36.1c-2,0-3.7-0.6-5.2-1.5l-1.7,8H28l2.4-11c-1-1.4-2-3-2.7-4.5v1.7c0,4.1-3.3,7.4-7.3,7.4c-4,0-7.3-3.3-7.3-7.4v-10h3.8   v10c0,2,1.6,3.6,3.6,3.6c2,0,3.6-1.6,3.6-3.6v-10h3.8c0.8,2.5,2.1,5.5,3.8,8.2c1-3.8,3.8-6.1,7.3-6.1c4.1,0,7.5,3.4,7.5,7.5   C46.3,32.7,42.9,36.1,38.8,36.1z"/></g></svg>
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </header>
+<!--Header-->
+
+<!--Hello-->
+  <section id="hello" class="container section">
+    <div class="row">
+      <div class="col-md-10">
+        <h2 id="hello_header" class="section__title">Hi there &#128400;</h2>
+        <p class="section__description">
+            My name is Pavel. I am a skilled ASP.NET Developer with over 7 years of experience building web applications based on ASP.NET. My professional competence also covers creation of frontend based on javascript frameworks, especially Angular. <br>
+            I've been working with PHP before switching to C#. My portfolio includes couple of projects related to Wordpress site development and performance optimization.</p>
+        <p class="section__description">I am passionate about building web apps and keen to provide a high quality solution for business: from building a responsive frontend to designing and developing backend logic based on ASP.NET.</p>
+        <p class="section__description">Working as independent contractor since 2020 I'm looking for new opportunities as remote employee.</p>
+      </div>
+    </div>
+    <a href="#contact" class="section_btn site-btn">Get in touch</a>
+  </section>
+<!--Hello-->
+  <hr>
+<!--Resume-->
+  <section id="resume" class="container section">
+    <div class="row">
+      <div class="col-md-10">
+        <h2 id="resume_header" class="section__title">Resume_</h2>
+        <p class="section__description">
+            7+ years experience in web development. Passionate about frontend preciosity and performance. Was involved in variety of tasks: from backend data processing logic to SPA frontend development; from in-site SEO updates to client performance optimizations with 90+ result score at <a href="https://developers.google.com/speed/pagespeed/insights/?hl=en">Page Speed Insights</a>. Worked for 5 years at cloud-based product related to PBX. Initiative in architecture design and technologies negotiations.
+        </p>
+        <h3 class="section__subtitle">Skills & Technologies</h3>
+        <ul class="section__bullet-list">
+            <li>ASP.NET Core, .NET Framework</li>
+            <li>Angular 2+, AngularJS, VanillaJS</li>
+            <li>Less/Sass, Material Design, Webpack, Gulp</li>
+            <li>MongoDB, LevelDB, MySQL, PostgreSQL</li>
+            <li>Git, Subversion</li>
+            <li>php, Wordpress, Yii Framework</li>
+            <li>Figma, Zeplin, Adobe Photoshop</li>
+            <li>Google Analytics, Mixpanel, Optimizely</li>
+            <li>Docker, Amazon EC2</li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-8 section__resume resume-list">
+        <h3 class="resume-list_title">employment</h3>
+        <div class="resume-list__block">
+          <p class="resume-list__block-title">Mightycall</p>
+          <p class="resume-list__block-date">2014 - current</p>
+          <p>
+            Senior Full Stack Developer
+          </p>
+          <p>
+          Implementing new features for a cloud-based product in PBX area.
+          <ul>
+            <li>Full Stack Development with client logic based on Angular and business logic based on c#. Utilizing MongoDB and LevelDB as storages.</li>
+            <li>Writing unit tests, integrations tests with Selenium and Cypress</li>
+          </ul>
+          </p>
+          <p>
+          Initiator of a new architecture under witch several product modules were refactored into single page design using Angular and WebAPI. Improving user experience step by step. <br>
+          Creating of calling application in cooperation with platform developers.
+          </p>
+        </div>
+        <div class="resume-list__block">
+          <p class="resume-list__block-title">Major Auto</p>
+          <p class="resume-list__block-date">2012 - 2014</p>
+          <p>
+            Working in IT department with company-created CMS based on MySQL and php. Creating new web-sites, adding new features to CMS. Creating web crawlers. Parsing large amounts of data. Making prefect adaptive markup that meets customers purposes.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-8 section__resume resume-list">
+        <h3 class="resume-list_title">education</h3>
+        <div class="resume-list__block">
+          <p class="resume-list__block-title">ITMO University </p>
+          <p class="resume-list__block-date">2005 - 2011</p>
+          <p>
+            Master`s Degree in Science and Technologies
+          </p>
+        </div>
+        </div>
+    </div>
+    <div class="row">
+      <div class="col-md-8 section__resume resume-list">
+        <h3 class="resume-list_title">supplementary education & certificates</h3>
+        <div class="resume-list__block">
+          <p class="resume-list__block-title">Stanford Online </p>
+          <p class="resume-list__block-date">2018</p>
+          <p>
+            Algorithms: Design and Analysis.<br>
+            Free online offering
+          </p>
+        </div>
+        <div class="resume-list__block">
+              <p class="resume-list__block-title">Mongo University </p>
+              <p class="resume-list__block-date">2016</p>
+              <p>
+                MongoDB for .NET developers.
+              </p>
             </div>
         </div>
-    </header>
-    <section class="layout__main margin_t__30">
-        <h2>Under construction..</h2>
-    </section>
+    </div>
+
+  </section>
+<!--Resume-->
+
+<!--Portfolio-->
+  <section id="portfolio" class="container section">
+    <div class="row">
+      <div class="col-md-12">
+        <h2 id="portfolio_header" class="section__title">My projects</h2>
+        <p>For most recent portfolio please review my <a target="_blank" href="https://www.upwork.com/o/profiles/users/~01954d5eb773d11743/?s=1110580755107926016">Upwork Account</a></p>
+      </div>
+    </div>
+    <!--<div class="row portfolio-menu">
+      <div class="col-md-12">
+        <nav>
+          <ul>
+            <li><a href="" data-portfolio-target-tag="all">all</a></li>
+            <li><a href="" data-portfolio-target-tag="mobile apps">mobile apps</a></li>
+            <li><a href="" data-portfolio-target-tag="web-sites">web-sites</a></li>
+            <li><a href="" data-portfolio-target-tag="landing-pages">landing pages</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="portfolio-cards">
+      <div class="row project-card" data-toggle="modal" data-target="#portfolioModal" data-portfolio-tag="web-sites">
+        <div class="col-md-6 col-lg-5 project-card__img">
+          <img class="" src="assets/img/img_project_1_mono.png" alt="project-img">
+        </div>
+        <div class="col-md-6 col-lg-7 project-card__info">
+          <h3 class="project-card__title">Mobile and desktop app for London hostel store  </h3>
+          <p class="project-card__description">
+            Do answered bachelor occasion in of offended no concerns. Supply worthy warmth branch of no ye.
+            Voice tried known to as my to. Though wished merits or be. Alone visit use these smart rooms ham.
+          </p>
+          <p class="project-card__stack">Used stack:</p>
+          <ul class="tags">
+            <li>html5</li>
+            <li>css3</li>
+            <li>JavaScript</li>
+            <li>bower</li>
+            <li>grunt</li>
+          </ul>
+          <a href="" class="project-card__link">www.superapp.com</a>
+        </div>
+      </div>
+      <div class="row project-card"  data-toggle="modal" data-target="#portfolioModal" data-portfolio-tag="mobile apps">
+        <div class="col-md-6 col-lg-5 project-card__img">
+          <img class="" src="assets/img/img_project_2_mono.png" alt="project-img">
+        </div>
+        <div class="col-md-6 col-lg-7 project-card__info">
+          <h3 class="project-card__title">Web app page for trevel company</h3>
+          <p class="project-card__description">
+            Preference any astonished unreserved mrs. Prosperous understood middletons in conviction an
+             uncommonly do. Supposing so be resolving breakfast am or perfectly. Is drew am hill from mr.
+          </p>
+          <p class="project-card__stack">Used stack:</p>
+          <ul class="tags">
+            <li>html5</li>
+            <li>css3</li>
+            <li>JavaScript</li>
+            <li>BEM</li>
+            <li>bower</li>
+            <li>grunt</li>
+          </ul>
+          <a href="" class="project-card__link">www.travellend.com</a>
+        </div>
+      </div>
+      <div class="row project-card"  data-toggle="modal" data-target="#portfolioModal" data-portfolio-tag="landing-pages">
+        <div class="col-md-6 col-lg-5 project-card__img">
+        <img class="" src="assets/img/img_project_3_mono.png" alt="project-img">
+      </div>
+        <div class="col-md-6 col-lg-7 project-card__info">
+        <h3 class="project-card__title">Admin template for Photo Service</h3>
+        <p class="project-card__description">
+          Do answered bachelor occasion in of offended no concerns. Supply worthy warmth branch of no ye.
+          Voice tried known to as my to. Though wished merits or be. Alone visit use these smart rooms ham.
+        </p>
+        <p class="project-card__stack">Used stack:</p>
+        <ul class="tags">
+          <li>html5</li>
+          <li>css3</li>
+          <li>JavaScript</li>
+          <li>BEM</li>
+          <li>bower</li>
+          <li>grunt</li>
+        </ul>
+        <a href="" class="project-card__link">www.coolphoto.com</a>
+      </div>
+      </div>
+    </div>-->
+  </section>
+<!--Portfolio-->
+
+<!--Testimonials-->
+  <!--<div id="testimonials" class="section">
+    <div class="background slider-carousel" style="background-image: url(assets/img/img_bg_main.jpg);">
+      <div class="container">
+        <div id="carouselTestimonials" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselTestimonials" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselTestimonials" data-slide-to="1"></li>
+            <li data-target="#carouselTestimonials" data-slide-to="2"></li>
+            <li data-target="#carouselTestimonials" data-slide-to="3"></li>
+          </ol>
+          <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="col-md-10 col-sm-10 col-10 mr-auto ml-auto">
+                  <p class="slider-carousel__title">Antonio Anderson</p>
+                  <p class="slider-carousel__caption">Project: Landin page for travel company</p>
+                  <hr>
+                  <p class="slider-carousel__description">Up or well must less rent read walk so be. Easy
+                    sold at do hour sing spot. Any meant has cease too the decay. Since party burst am
+                    it match. By or blushes between besides offices noisier as. Sending do brought winding
+                    compass in. Easy sold at do hour sing spot less rent read walk so be. Any meant has
+                    cease too the decay. </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-md-10 col-sm-10 col-10 mr-auto ml-auto">
+                  <p class="slider-carousel__title">Antonio Anderson</p>
+                  <p class="slider-carousel__caption">Project: Landin page for travel company</p>
+                  <hr>
+                  <p class="slider-carousel__description">Up or well must less rent read walk so be. Easy
+                    sold at do hour sing spot. Any meant has cease too the decay. Since party burst am
+                    it match. By or blushes between besides offices noisier as. Sending do brought winding
+                    compass in. Easy sold at do hour sing spot less rent read walk so be. Any meant has
+                    cease too the decay. </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-md-10 col-sm-10 col-10 mr-auto ml-auto">
+                  <p class="slider-carousel__title">Antonio Anderson</p>
+                  <p class="slider-carousel__caption">Project: Landin page for travel company</p>
+                  <hr>
+                  <p class="slider-carousel__description">Up or well must less rent read walk so be. Easy
+                    sold at do hour sing spot. Any meant has cease too the decay. Since party burst am
+                    it match. By or blushes between besides offices noisier as. Sending do brought winding
+                    compass in. Easy sold at do hour sing spot less rent read walk so be. Any meant has
+                    cease too the decay. </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-md-10 col-sm-10 col-10 mr-auto ml-auto">
+                  <p class="slider-carousel__title">Antonio Anderson</p>
+                  <p class="slider-carousel__caption">Project: Landin page for travel company</p>
+                  <hr>
+                  <p class="slider-carousel__description">Up or well must less rent read walk so be. Easy
+                    sold at do hour sing spot. Any meant has cease too the decay. Since party burst am
+                    it match. By or blushes between besides offices noisier as. Sending do brought winding
+                    compass in. Easy sold at do hour sing spot less rent read walk so be. Any meant has
+                    cease too the decay. </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#testimonials" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#testimonials" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+          <div class="slider-carousel__circle">
+            <p><i class="fa fa-quote-right" aria-hidden="true"></i></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>-->
+<!--Testimonials-->
+
+<!--Blog-->
+  <!--<section id="blog" class="container section">
+    <div class="row">
+      <div class="col-md-12">
+        <h2 id="blog_header" class="section__title">Latest Posts_</h2>
+      </div>
+    </div>
+
+    <div class="row post-cards">
+      <div class="col-md-4">
+        <a href="blog.html">
+          <div class="post-cards__card">
+            <div class="post-cards__img">
+              <img src="assets/img/img_blog_1.png" alt="blog_img">
+            </div>
+            <div class="post-cards__info">
+              <p class="post-cards__date">October 22, 2017</p>
+              <h3 class="post-cards_title">How to use css-preprocessor</h3>
+              <p class="post-cards_description">Lorem ipsum dolor sit amet, consectetur
+                adipisicing elit, sed do eiusmod tempr incididunt...
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-4">
+        <a href="blog.html">
+          <div class="post-cards__card">
+            <div class="post-cards__img">
+              <img src="assets/img/img_blog_2.png" alt="blog_img">
+            </div>
+            <div class="post-cards__info">
+              <p class="post-cards__date">October 22, 2017</p>
+              <h3 class="post-cards_title">How I organize my work with code</h3>
+              <p class="post-cards_description">Lorem ipsum dolor sit amet, consectetur
+                adipisicing elit, sed do eiusmod tempr incididu...
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-4">
+        <a href="blog.html">
+          <div class="post-cards__card">
+            <div class="post-cards__img">
+              <img src="assets/img/img_blog_3.png" alt="blog_img">
+            </div>
+            <div class="post-cards__info">
+              <p class="post-cards__date">October 22, 2017</p>
+              <h3 class="post-cards_title">SVG sprites vs Icon Font</h3>
+              <p class="post-cards_description">Lorem ipsum dolor sit amet, consectetur
+                adipisicing elit, sed do eiusmod tempr incididu...
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>-->
+<!--Blog-->
+
+<!--Contact-->
+  <div class="background" style="background-image: url(assets/img/img_bg_main.jpg)">
+    <div id="contact" class="container section">
+      <div class="row">
+        <div class="col-md-12">
+          <p id="contacts_header" class="section__title">Get in touch_</p>
+        </div>
+      </div>
+      <div class="row contacts">
+        <div class="col-md-5 col-lg-4">
+          <div class="contacts__list">
+            <dl class="contact-list">
+              <dt>Email:</dt>
+              <dd><a href="mailto:mail@mail.com">p1653v@yandex.ru</a></dd>
+              <dt>Telegramm:</dt>
+              <dd><a href="https://t.me/pasha_sk">@pasha_sk</a></dd>
+            </dl>
+          </div>
+          <div class="contacts__social">
+            <ul>
+              <li><a href="https://www.linkedin.com/in/sklyar-pavel-53a0133b/" target="_blank">Linkedin</a></li>
+              <li><a href="https://github.com/PashaSk" target="_blank">GitHub</a></li>
+              <li><a href="https://www.upwork.com/o/profiles/users/~01954d5eb773d11743/?s=1110580755107926016" target="_blank">Upwork</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-7 col-lg-5">
+          <div class="contacts__form">
+            <p class="contacts__form-title">Or just write me a letter here_ (not working yet..)</p>
+            <form class="js-form">
+              <div class="form-group">
+                <input class="form-field js-field-name" type="text" placeholder="Your name" required>
+                <span class="form-validation"></span>
+                <span class="form-invalid-icon"><i class="mdi mdi-close" aria-hidden="true"></i></span>
+              </div>
+              <div class="form-group">
+                <input class="form-field js-field-email" type="email"  placeholder="Your e-mail" required>
+                <span class="form-validation"></span>
+                <span class="form-invalid-icon"><i class="mdi mdi-close" aria-hidden="true"></i></span>
+              </div>
+              <div class="form-group">
+                <textarea class="form-field js-field-message" placeholder="Type the message here" required></textarea>
+                <span class="form-validation"></span>
+                <span class="form-invalid-icon"><i class="mdi mdi-close" aria-hidden="true"></i></span>
+              </div>
+              <button class="site-btn site-btn--form" type="submit" value="Send">Send</button>
+            </form>
+          </div>
+          <div class="footer">
+            <p>© 2020 Pave Sklyar. All Rights Reserved</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!--Contact-->
+
+  <script src="assets/js/jquery-2.2.4.min.js"></script>
+  <script src="assets/js/popper.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/menu.js"></script>
+  <script src="assets/js/jquery.waypoints.js"></script>
+  <script src="assets/js/progress-list.js"></script>
+  <script src="assets/js/section.js"></script>
+  <script src="assets/js/portfolio-filter.js"></script>
+  <script src="assets/js/slider-carousel.js"></script>
+  <script src="assets/js/mobile-menu.js"></script>
+  <script src="assets/js/contacts.js"></script>
+  <script src="assets/js/mbclicker.min.js"></script>
+  <script src="assets/js/site-btn.js"></script>
+  <script src="assets/js/style-switcher.js"></script>
 </body>
 </html>

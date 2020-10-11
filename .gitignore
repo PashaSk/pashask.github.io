@@ -1,2 +1,3 @@
-.idea/
-src/
+# dependencies
+node_modules
+.idea
